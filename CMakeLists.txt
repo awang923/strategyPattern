@@ -7,10 +7,12 @@ SET(CMAKE_CXX_STANDARD 11)
 
 ADD_EXECUTABLE(test
     unit_test.cpp
+    ListContainer.cpp
 )
 
 ADD_EXECUTABLE(lab
     main.cpp
+    ListContainer.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)
