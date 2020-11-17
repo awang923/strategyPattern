@@ -21,9 +21,11 @@ void ListContainer::print(){
 }
 
 void ListContainer::sort(){
-   if (sort_function == nullptr){
-//	throw out_of_range("ERROR");
-	cout << endl;
+   try{
+	sort_function->sort(this);
+   }
+   catch(exception& e){
+	throw e.what();
    }
 }
 

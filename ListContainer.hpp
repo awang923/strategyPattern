@@ -8,10 +8,11 @@
 using namespace std;
 
 class ListContainer: public Container{
-   private:
-	list<Base* >items;
+//   private:
+//	list<Base* >items;
    public:
 //	ListContainer();
+	list<Base* >items;
 	virtual void add_element(Base* element);
 	virtual void print();
 	virtual void sort();
